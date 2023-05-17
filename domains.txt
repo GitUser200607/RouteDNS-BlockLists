@@ -109,4 +109,4 @@ appboot.netflix.com
 secure.netflix.com
 api-global.netflix.com
 nrdp.nccp.netflix.com
-ya.ru
+ya.ru # test domain
