@@ -38,7 +38,7 @@ openapi.samsung.com
 osb-apps.samsungqbe.com
 osb-v1-alb.samsungqbe.com
 osb-v2.samsungqbe.com
-asb-apps-v2.samsungqbe.com
+osb-apps-v2.samsungqbe.com
 osb-auth-eusvc-v2.samsungqbe.com
 osb-krsvc.samsungqbe.com
 osb-eusvc.samsungqbe.com
