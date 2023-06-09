@@ -48,7 +48,7 @@ pipeaota.com
 premium-videos.telly.com
 prov.samsungcloudsolution.com
 rd.samsungadhub.com
-rwww.samsungotn.net
+www.samsungotn.net
 samsungacr.com
 samsungadhub.com
 samsungcloudsolution.com
@@ -85,8 +85,20 @@ tvx.adgrx.com
 #www.samsungotn.net # required for software update
 #otn.samsungcloudcdn.com # Prevents updates on UE49KS7000 and QE55Q9FNA; https://github.com/Perflyst/PiHoleBlocklist/issues/60
 api-global.netflix.com
-www.yahoo.com
 appboot.netflix.com
 secure.netflix.com
 api-global.netflix.com
 nrdp.nccp.netflix.com
+# Samsung T27H390SIX (27")
+lcprd1.samsungcloudsolution.net
+cdn.samsungcloudsolution.com
+d7luqmstmj331.cloudfront.net
+mediaservices.cdn-apple.com
+eu-auth2.samsungosp.com
+acr0.samsungcloudsolution.com
+otn1.samsungcloudcdn.com
+otnprd9.samsungcloudsolution.net
+otnprd8.samsungcloudsolution.net
+osb-tnc-v2-appsacc.samsungqbe.com
+configprd.samsungcloudsolution.net
+d1oxlq5h9kq8q5.cloudfront.net
