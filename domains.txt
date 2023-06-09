@@ -102,3 +102,12 @@ otnprd8.samsungcloudsolution.net
 osb-tnc-v2-appsacc.samsungqbe.com
 configprd.samsungcloudsolution.net
 d1oxlq5h9kq8q5.cloudfront.net
+appboot.netflix.com # Netflix
+api-global.netflix.com # Netflix
+nrdp.nccp.netflix.com # Netflix
+secure.netflix.com # Netflix
+# bingo.cloud.cdnland.in # ?
+# cloud.cdnland.in # ?
+# athens.cloud.cdnland.in # ?
+# secure.netflix.com # ?
+# 9830.svetacdn.in # ?
