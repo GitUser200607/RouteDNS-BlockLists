@@ -109,5 +109,6 @@ secure.netflix.com # Netflix
 # bingo.cloud.cdnland.in # ?
 # cloud.cdnland.in # ?
 # athens.cloud.cdnland.in # ?
-# secure.netflix.com # ?
 # 9830.svetacdn.in # ?
+secure.netflix.com # ?
+www.yahoo.com
