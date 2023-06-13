@@ -1,0 +1,47 @@
+[resolvers.adguard-doh-post-bootstrap]
+address = "https://dns.adguard-dns.com/dns-query"
+protocol = "doh"
+bootstrap-address = "94.140.14.14"
+ca = "/var/usbmnt/sda1/ssl/certs/ca-bundle.crt"
+
+[resolvers.adguard-family-doh-post-bootstrap]
+address = "https://family.adguard-dns.com/dns-query"
+protocol = "doh"
+bootstrap-address = "94.140.14.15"
+ca = "/var/usbmnt/sda1/ssl/certs/ca-bundle.crt"
+
+[groups.adguard-blocklist]
+type      = "blocklist-v2"
+resolvers = ["adguard-doh-post-bootstrap"]
+blocklist-refresh = 86400 # Time to refresh the blocklist(s) in seconds
+blocklist-source = [
+   {format = "domain", source = "/var/usbmnt/sda1/domains.txt"},
+#   {format = "domain", source = "https://raw.githubusercontent.com/GitUser200607/RouteDNS-BlockLists/main/domains.txt"},
+]
+
+[groups.adguard-family-blocklist]
+type      = "blocklist-v2"
+resolvers = ["adguard-family-doh-post-bootstrap"]
+blocklist-refresh = 86400 # Time to refresh the blocklist(s) in seconds
+blocklist-source = [
+   {format = "domain", source = "/var/usbmnt/sda1/domains.txt"},
+#   {format = "domain", source = "https://raw.githubusercontent.com/GitUser200607/RouteDNS-BlockLists/main/domains.txt"},
+]
+
+[routers.router1]
+routes = [
+  { source = "192.168.0.75/32", resolver="adguard-blocklist" },
+  { source = "192.168.0.64/32", resolver="adguard-blocklist" },
+  #{ source = "192.168.1.0/24", resolver="adguard-family-blocklist" },
+  { resolver="adguard-family-blocklist" },
+]
+
+[listeners.local-udp]
+address = ":53"
+protocol = "udp"
+resolver = "router1"
+
+[listeners.local-tcp]
+address = ":53"
+protocol = "tcp"
+resolver = "router1"
