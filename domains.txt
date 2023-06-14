@@ -86,7 +86,6 @@ tvx.adgrx.com
 #otn.samsungcloudcdn.com # Prevents updates on UE49KS7000 and QE55Q9FNA; https://github.com/Perflyst/PiHoleBlocklist/issues/60
 api-global.netflix.com
 appboot.netflix.com
-secure.netflix.com
 api-global.netflix.com
 nrdp.nccp.netflix.com
 # Samsung T27H390SIX (27")
@@ -110,5 +109,4 @@ secure.netflix.com # Netflix
 # cloud.cdnland.in # ?
 # athens.cloud.cdnland.in # ?
 # 9830.svetacdn.in # ?
-secure.netflix.com # ?
 www.yahoo.com
